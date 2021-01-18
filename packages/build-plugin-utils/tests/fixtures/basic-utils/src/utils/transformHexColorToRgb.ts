@@ -39,5 +39,5 @@ export function getIntHexColor(color: string): number {
  * @returns rgb {@link RgbColor}
  */
 export function transformHexColorToRgb(hexColor: number | string): RgbColor {
-  return [1,1,1]
+  return [1, 1, 1];
 }

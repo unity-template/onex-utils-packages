@@ -3,14 +3,13 @@
   "scripts": {
     "bootstrap": "yarn install",
     "build": "lerna run --stream --sort build",
-    "publish": "npm run build && lerna publish --graph-type all",
+    "publish": "lerna publish --graph-type all",
     "lint": "eslint packages --fix --ext .js --ext .ts",
     "commit": "git-cz",
     "test": "jest"
   },
   "private": true,
   "devDependencies": {
-    "lerna": "^3.22.1",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-transform-async-to-generator": "^7.12.1",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
@@ -20,6 +19,7 @@
     "@babel/preset-typescript": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@iceworks/spec": "^1.1.0",
     "@types/eslint": "^7.2.2",
     "@types/jest": "^26.0.14",
     "@types/lodash": "^4.14.161",
@@ -37,9 +37,11 @@
     "cz-lerna-changelog": "^2.0.3",
     "eslint": "^7.9.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-plugin-tsdoc": "^0.2.10",
     "git-cz": "^4.7.1",
     "husky": "^4.3.0",
     "jest": "^26.5.3",
+    "lerna": "^3.22.1",
     "lint-staged": "^10.4.0",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
@@ -67,7 +69,9 @@
     "url": "git+https://github.com/Genluo/generator-template.git"
   },
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": [
+      "packages/*"
+    ]
   },
   "changelog": {
     "labels": {

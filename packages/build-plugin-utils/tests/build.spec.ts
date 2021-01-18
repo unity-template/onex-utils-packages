@@ -1,6 +1,6 @@
+import { build } from '@alib/build-scripts';
 import fs = require('fs-extra');
 import path = require('path');
-import { build } from '@alib/build-scripts';
 
 describe('simple build test suite', () => {
   beforeAll(async () => {

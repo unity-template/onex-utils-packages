@@ -1,5 +1,4 @@
-import { IPlugin } from "@alib/build-scripts";
-import { CliCommand } from './const';
+import { IPlugin } from '@alib/build-scripts';
 import { getBaseWebpackConfig } from './config/getBaseWebpack';
 
 const plugin: IPlugin = ({

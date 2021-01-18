@@ -13,7 +13,7 @@ export const getBabelConfig = () => {
             'transform-computed-properties',
           ],
         },
-      ]
+      ],
     ],
     plugins: [
       require.resolve('@babel/plugin-syntax-dynamic-import'),
@@ -46,4 +46,4 @@ export const getBabelConfig = () => {
 
 export default {
   getBabelConfig,
-}
+};
