@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.1.3...build-plugin-utils@0.1.4) (2021-01-19)
+
+
+### Bug Fixes
+
+* 添加依赖 ([3a168e7](https://github.com/unity-template/build-plugin-utils/commit/3a168e77fda652d5d88630e11b8624648c665312))
+
+
+
+
+
 ## [0.1.3](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.1.2...build-plugin-utils@0.1.3) (2021-01-19)
 
 **Note:** Version bump only for package build-plugin-utils
