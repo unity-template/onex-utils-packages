@@ -6,6 +6,12 @@ const packageName = require('./package.json').name;
 module.exports = {
   ...baseConfig,
 
+  globals: {
+    'ts-jest': {
+      tsConfig: `<rootDir>/packages/${packageName}/tsconfig.json`,
+    },
+  },
+
   roots: [
     `<rootDir>/packages/${packageName}`,
   ],
