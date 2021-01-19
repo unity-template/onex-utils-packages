@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.1.1...build-plugin-utils@0.1.2) (2021-01-19)
+
+
+### Bug Fixes
+
+* tsconfig添加esModuleInterop ([3c0b721](https://github.com/unity-template/build-plugin-utils/commit/3c0b721bdefe8430dfeabca13101bc0a08fee736))
+
+
+
+
+
 ## [0.1.1](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.1.0...build-plugin-utils@0.1.1) (2021-01-19)
 
 
