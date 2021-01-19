@@ -23,11 +23,11 @@ export const getBabelConfig = () => {
       require.resolve('@babel/plugin-proposal-export-default-from'),
       [
         require.resolve('@babel/plugin-proposal-optional-chaining'),
-        { loose: true },
+        { loose: false },
       ],
       [
         require.resolve('@babel/plugin-proposal-nullish-coalescing-operator'),
-        { loose: true },
+        { loose: false },
       ],
       // Stage 2
       [require.resolve('@babel/plugin-proposal-decorators'), { legacy: true }],
@@ -35,7 +35,7 @@ export const getBabelConfig = () => {
       // Stage 3
       [
         require.resolve('@babel/plugin-proposal-class-properties'),
-        { loose: true },
+        { loose: false },
       ],
       require.resolve('babel-plugin-minify-dead-code-elimination-while-loop-fixed'),
     ],
