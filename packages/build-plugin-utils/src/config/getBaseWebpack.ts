@@ -1,8 +1,8 @@
-import * as CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
+import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
 import Config from 'webpack-chain';
 import * as glob from 'glob';
 import * as path from 'path';
-import * as TimeFixPlugin from 'time-fix-plugin';
+import TimeFixPlugin from 'time-fix-plugin';
 import { getBabelConfig } from './getBabelConfig';
 import { PluginContext } from '@alib/build-scripts/lib';
 
