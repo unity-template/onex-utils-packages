@@ -1,5 +1,5 @@
 import * as CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
-import * as Config from 'webpack-chain';
+import Config from 'webpack-chain';
 import * as glob from 'glob';
 import * as path from 'path';
 import * as TimeFixPlugin from 'time-fix-plugin';
@@ -12,7 +12,7 @@ function setEntryFile(context: PluginContext, config: Config) {
   const entryFiles = glob.sync('./src/**/*.ts', {
     cwd: rootDir,
   });
-  entryFiles.forEach((filepath) => {
+  entryFiles.forEach((filepath: string) => {
     const fileDir = /.\/src\/(.*?)\.ts/.exec(filepath);
     map[fileDir[1]] = filepath;
     config.entry(fileDir[1])
@@ -26,7 +26,6 @@ function setEntryFile(context: PluginContext, config: Config) {
  */
 export const getBaseWebpackConfig = (context: PluginContext, options: any): Config => {
   const { rootDir } = context;
-  const { name } = options;
   const config = new Config();
   const babelConfig = getBabelConfig();
 

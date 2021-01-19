@@ -1,4 +1,4 @@
-import * as babelMerge from 'babel-merge';
+import babelMerge from 'babel-merge';
 
 export const getBabelConfig = () => {
   const baseConfig = {
