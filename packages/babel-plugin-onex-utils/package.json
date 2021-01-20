@@ -1,0 +1,24 @@
+{
+  "name": "babel-plugin-onex-utils",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "云墨 <lg208143@alibaba-inc.com>",
+  "homepage": "https://github.com/unity-template/onex-utils-packages#readme",
+  "license": "ISC",
+  "main": "lib/babel-plugin-onex-utils.js",
+  "files": [
+    "lib",
+    "tests",
+    "tsconfig.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unity-template/onex-utils-packages.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/unity-template/onex-utils-packages/issues"
+  }
+}
