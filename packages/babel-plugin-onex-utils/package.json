@@ -20,5 +20,15 @@
   },
   "bugs": {
     "url": "https://github.com/unity-template/onex-utils-packages/issues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/parser": "^7.12.11",
+    "@babel/traverse": "^7.12.12",
+    "@babel/types": "^7.12.12",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "glob": "^7.1.6"
   }
 }
