@@ -1,18 +1,33 @@
-import babelPluginOnexUtils from '../src/babel-plugin-onex-utils';
+import babelPluginOnexUtils from '../src';
 import { transformFileSync } from '@babel/core';
-import fs from 'fs';
+import fs, { copyFileSync } from 'fs';
 import glob from 'glob';
-import _ from 'lodash';
+import lodash from 'lodash';
 import path from 'path';
+import { exec } from 'child_process';
 
+function getTestName(p) {
+  return path.parse(p).name;
+}
 
 describe('babel-plugin-onex-utils', () => {
   const pattern = path.join(__dirname, './fixtures/*/');
-  _.each(glob.sync(pattern), (fixturesPath) => {
-    const name = fixturesPath;
+
+  lodash.each(glob.sync(pattern), (fixturesPath) => {
+    const name = getTestName(fixturesPath);
+    const actualPath = path.join(fixturesPath, './actual.js');
+    const expectedPath = path.join(fixturesPath, './expected.js');
+
     test(`should work with ${name}`, () => {
-      console.log(name);
-      expect(name).toBe('');
+      const debuggerName = 'onex-utils-variable-declarator-exports';
+      const expected = fs.readFileSync(expectedPath).toString().trim();
+      const actual = transformFileSync(
+        actualPath,
+        {
+          plugins: [babelPluginOnexUtils],
+        },
+      ).code.trim();
+      expect(actual).toEqual(expected);
     });
   });
 });

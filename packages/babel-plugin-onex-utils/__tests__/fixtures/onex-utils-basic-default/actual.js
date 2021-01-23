@@ -1,4 +1,3 @@
-import _ from 'onex-utils';
+import utils from 'onex-utils';
 
-const result = _.map([], n => _.add(1, n));
-_.take(_.reject(result), 1);
+console.log(utils.data.node());

@@ -1,10 +1,10 @@
 "use strict";
 
-var _map2 = _interopRequireDefault(require("lodash/map"));
+var _map5 = _interopRequireDefault(require("onex-utils/map"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-const result1 = (0, _map2.default)([]);
-const result2 = (0, _map2.default)([]);
-const result3 = (0, _map2.default)([]);
-const result4 = (0, _map2.default)([]);
+var result1 = (0, _map5["default"])([]);
+var result2 = (0, _map5["default"])([]);
+var result3 = (0, _map5["default"])([]);
+var result4 = (0, _map5["default"])([]);

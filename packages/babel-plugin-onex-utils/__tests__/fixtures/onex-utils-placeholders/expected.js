@@ -1,10 +1,10 @@
 "use strict";
 
-var _bind2 = _interopRequireDefault(require("lodash/bind"));
+var _onexUtils = _interopRequireDefault(require("onex-utils"));
 
-var _partial2 = _interopRequireDefault(require("lodash/fp/partial"));
+var _bind2 = _interopRequireDefault(require("onex-utils/bind"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-(0, _bind2.default)(func, _bind.placeholder, 1);
-(0, _partial2.default)(func, _partial.placeholder, 1);
+(0, _bind2["default"])(func, _onexUtils["default"], 1);
+fp.partial(func, fp, 1);

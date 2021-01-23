@@ -1,4 +1,4 @@
-import types from '@babel/types';
+import * as types from '@babel/types';
 import { ImportItem } from '../type';
 import { NodePath } from '@babel/core';
 

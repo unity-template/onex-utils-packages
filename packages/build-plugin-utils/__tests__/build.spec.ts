@@ -14,5 +14,5 @@ describe('simple build test suite', () => {
   });
   test('check output source', () => {
     expect(fs.existsSync(path.join(__dirname, 'fixtures/basic-utils/build/index.js'))).toBe(true);
-  });
+  }, 30000);
 });

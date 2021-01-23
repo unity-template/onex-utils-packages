@@ -1,8 +1,10 @@
 "use strict";
 
-var _noop2 = _interopRequireDefault(require("lodash/noop"));
+var _noop10 = _interopRequireDefault(require("onex-utils/noop"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _onexUtils = _interopRequireDefault(require("onex-utils"));
 
-const array = [undefined, undefined, _noop2.default, _noop2.default, _noop2.default, _noop2.default];
-(0, _noop2.default)(_noop.placeholder, _noop.placeholder, _noop2.default, _noop2.default, _noop2.default, _noop2.default);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var array = [_onexUtils["default"], _onexUtils["default"], _noop10["default"], _noop10["default"], _noop10["default"], _noop10["default"]];
+(0, _noop10["default"])(_onexUtils["default"], _onexUtils["default"], _noop10["default"], _noop10["default"], _noop10["default"], _noop10["default"]);
