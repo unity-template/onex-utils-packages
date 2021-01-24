@@ -1,4 +1,4 @@
-# `babel-plugin-onex-utils`
+# [babel-plugin-onex-utils](https://www.npmjs.com/package/babel-plugin-onex-utils)
 
 > `onex-utils`工具库的`babel`插件，挑选出你使用`onex-utils`的模块，剔除未使用的模块，减小项目引用
 
