@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.1.4...build-plugin-utils@0.2.0) (2021-01-24)
+
+
+### Features
+
+* 🎸 测试用例验证通过 ([c3c72b7](https://github.com/unity-template/build-plugin-utils/commit/c3c72b7064bddc6436f1543109e4601b592dea38))
+
+
+
+
+
 ## [0.1.4](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.1.3...build-plugin-utils@0.1.4) (2021-01-19)
 
 
