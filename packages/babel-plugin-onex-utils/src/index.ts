@@ -5,25 +5,7 @@ import { AddDefaultImported } from './utils/module-import';
 import { findImportList } from './utils/findImportList';
 import { Ids } from './const';
 import { ImportItem, ImportList, PluginPass } from './type';
-import { PluginObj, NodePath } from '@babel/core';
-
-
-function getCallee({ parentPath }: NodePath) {
-  // Trace curried calls to their origin, e.g. `fp.partial(func)([fp, 2])(1)`.
-  while (!parentPath.isStatement()) {
-    if (parentPath.isCallExpression()) {
-      let result = parentPath.node.callee;
-
-      while (types.isCallExpression(result)) {
-        result = result.callee;
-      }
-
-      return result;
-    }
-
-    parentPath = parentPath.parentPath;
-  }
-}
+import { PluginObj } from '@babel/core';
 
 export default function babelPluginOnexUtils(): PluginObj<PluginPass> {
   return {
