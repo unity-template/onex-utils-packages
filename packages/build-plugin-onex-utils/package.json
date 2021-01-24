@@ -1,0 +1,26 @@
+{
+  "name": "build-plugin-onex-utils",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "云墨 <lg208143@alibaba-inc.com>",
+  "homepage": "https://github.com/unity-template/onex-utils-packages#readme",
+  "license": "ISC",
+  "main": "lib/build-plugin-onex-utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unity-template/onex-utils-packages.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/unity-template/onex-utils-packages/issues"
+  }
+}
