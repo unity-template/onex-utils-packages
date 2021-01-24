@@ -1,7 +1,7 @@
 import * as types from '@babel/types';
 import lodash from 'lodash';
 import traverse from '@babel/traverse';
-import { AddDefaultImported } from './utils/module-import';
+import { AddDefaultImported } from './utils/importModule';
 import { findImportList } from './utils/findImportList';
 import { Ids } from './const';
 import { ImportItem, ImportList, PluginPass } from './type';

@@ -7,7 +7,7 @@ export const findImportList = (path: NodePath<babel.types.ImportDeclaration>, im
     const local = specifier.node.local.name;
 
     /**
-     * @remarks default类型的处理
+     * @remarks default类型引用的处理
      * ```ts
      * import utils from 'onex-utils';
      * ```
