@@ -5,22 +5,32 @@
   "author": "云墨 <lg208143@alibaba-inc.com>",
   "homepage": "https://github.com/unity-template/onex-utils-packages#readme",
   "license": "ISC",
-  "main": "lib/build-plugin-onex-utils.js",
+  "main": "lib/index.js",
+  "types": "",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "src",
+    "tests",
+    "tsconfig.json"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unity-template/onex-utils-packages.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rm -rf lib && tsc",
+    "prepublishOnly": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/unity-template/onex-utils-packages/issues"
+  },
+  "dependencies": {
+    "@alib/build-scripts": "^0.1.30",
+    "babel-plugin-onex-utils": "^0.1.0"
   }
 }

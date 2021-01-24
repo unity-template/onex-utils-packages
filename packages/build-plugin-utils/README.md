@@ -38,4 +38,4 @@ $ npm run build
 
 ### Reference
 * [build-scripts源码](https://github.com/ice-lab/build-scripts)
-* [build-script文档](https://yuque.alibaba-inc.com/igts3i/pw9200)
+* [build-scripts文档](https://yuque.alibaba-inc.com/igts3i/pw9200)
