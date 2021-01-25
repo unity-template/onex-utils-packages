@@ -30,3 +30,5 @@ npm-debug.log*
 es/
 dist/
 .idea/
+yarn.lock
+yarn.error
