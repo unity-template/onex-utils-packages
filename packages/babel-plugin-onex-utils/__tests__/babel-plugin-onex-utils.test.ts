@@ -4,7 +4,7 @@ import fs, { copyFileSync } from 'fs';
 import glob from 'glob';
 import lodash from 'lodash';
 import path from 'path';
-import { exec } from 'child_process';
+
 
 function getTestName(p) {
   return path.parse(p).name;
@@ -19,7 +19,6 @@ describe('babel-plugin-onex-utils', () => {
     const expectedPath = path.join(fixturesPath, './expected.js');
 
     test(`should work with ${name}`, () => {
-      const debuggerName = 'onex-utils-variable-declarator-exports';
       const expected = fs.readFileSync(expectedPath).toString().trim();
       const actual = transformFileSync(
         actualPath,

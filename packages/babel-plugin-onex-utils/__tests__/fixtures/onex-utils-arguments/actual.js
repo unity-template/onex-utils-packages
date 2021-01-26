@@ -1,3 +1,3 @@
-import { capitalize, map } from 'onex-utils';
+import { data } from 'onex-utils';
 
-map([], capitalize);
+data.getImgToBase64('url', data.blobToDataURL());

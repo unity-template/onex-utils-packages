@@ -1,9 +1,7 @@
 "use strict";
 
-var _map2 = _interopRequireDefault(require("onex-utils/map"));
-
-var _capitalize2 = _interopRequireDefault(require("onex-utils/capitalize"));
+var _data3 = _interopRequireDefault(require("onex-utils/data"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-(0, _map2["default"])([], _capitalize2["default"]);
+_data3["default"].getImgToBase64('url', _data3["default"].blobToDataURL());
