@@ -1,6 +1,6 @@
 "use strict";
 
-var _merge2 = _interopRequireDefault(require("onex-utils/merge"));
+var _merge2 = _interopRequireDefault(require("onex-utils/build/merge"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

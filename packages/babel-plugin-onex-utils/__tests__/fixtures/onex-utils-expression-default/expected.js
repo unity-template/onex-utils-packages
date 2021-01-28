@@ -1,12 +1,12 @@
 "use strict";
 
-var _noop4 = _interopRequireDefault(require("onex-utils/noop"));
+var _noop4 = _interopRequireDefault(require("onex-utils/build/noop"));
 
-var _filter2 = _interopRequireDefault(require("onex-utils/filter"));
+var _filter2 = _interopRequireDefault(require("onex-utils/build/filter"));
 
-var _map2 = _interopRequireDefault(require("onex-utils/map"));
+var _map2 = _interopRequireDefault(require("onex-utils/build/map"));
 
-var _identity2 = _interopRequireDefault(require("onex-utils/identity"));
+var _identity2 = _interopRequireDefault(require("onex-utils/build/identity"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

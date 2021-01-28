@@ -1,6 +1,6 @@
 "use strict";
 
-var _map5 = _interopRequireDefault(require("onex-utils/map"));
+var _map5 = _interopRequireDefault(require("onex-utils/build/map"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

@@ -1,6 +1,6 @@
 "use strict";
 
-var _noop2 = _interopRequireDefault(require("onex-utils/noop"));
+var _noop2 = _interopRequireDefault(require("onex-utils/build/noop"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

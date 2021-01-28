@@ -22,7 +22,7 @@ Object.defineProperty(exports, "bar", {
   }
 });
 
-var _isObject2 = _interopRequireDefault(require("onex-utils/isObject"));
+var _isObject2 = _interopRequireDefault(require("onex-utils/build/isObject"));
 
 var _foo2 = _interopRequireDefault(require("foo"));
 

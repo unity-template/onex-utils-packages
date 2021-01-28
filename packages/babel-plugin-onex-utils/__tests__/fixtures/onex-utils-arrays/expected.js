@@ -1,14 +1,14 @@
 "use strict";
 
-var _toUpper2 = _interopRequireDefault(require("onex-utils/toUpper"));
+var _toUpper2 = _interopRequireDefault(require("onex-utils/build/toUpper"));
 
-var _round2 = _interopRequireDefault(require("onex-utils/round"));
+var _round2 = _interopRequireDefault(require("onex-utils/build/round"));
 
-var _isString2 = _interopRequireDefault(require("onex-utils/isString"));
+var _isString2 = _interopRequireDefault(require("onex-utils/build/isString"));
 
-var _isNumber2 = _interopRequireDefault(require("onex-utils/isNumber"));
+var _isNumber2 = _interopRequireDefault(require("onex-utils/build/isNumber"));
 
-var _cond2 = _interopRequireDefault(require("onex-utils/cond"));
+var _cond2 = _interopRequireDefault(require("onex-utils/build/cond"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

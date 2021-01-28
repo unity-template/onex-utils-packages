@@ -7,7 +7,12 @@ export function AddDefaultImported(
   imported: string,
   local?: string,
 ): any {
-  const source = `${packageName}/${imported}`;
+  let source: string = packageName;
+  if (imported && imported !== 'default') {
+    source = `${source}/build/${imported}`;
+  } else {
+    source = `${source}/${imported}`;
+  }
   return addDefault(path, source, {
     nameHint: local || imported,
   });

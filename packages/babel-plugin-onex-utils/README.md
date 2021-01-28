@@ -23,9 +23,9 @@ roughly to
 ```ts
 "use strict";
 
-var _map2 = _interopRequireDefault(require("onex-utils/map"));
+var _map2 = _interopRequireDefault(require("onex-utils/build/map"));
 
-var _capitalize2 = _interopRequireDefault(require("onex-utils/capitalize"));
+var _capitalize2 = _interopRequireDefault(require("onex-utils/build/capitalize"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

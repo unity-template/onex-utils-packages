@@ -1,12 +1,12 @@
 "use strict";
 
-var _reject2 = _interopRequireDefault(require("onex-utils/reject"));
+var _reject2 = _interopRequireDefault(require("onex-utils/build/reject"));
 
-var _take2 = _interopRequireDefault(require("onex-utils/take"));
+var _take2 = _interopRequireDefault(require("onex-utils/build/take"));
 
-var _add2 = _interopRequireDefault(require("onex-utils/add"));
+var _add2 = _interopRequireDefault(require("onex-utils/build/add"));
 
-var _map2 = _interopRequireDefault(require("onex-utils/map"));
+var _map2 = _interopRequireDefault(require("onex-utils/build/map"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
