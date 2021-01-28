@@ -1,6 +1,6 @@
 {
   "name": "build-plugin-onex-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "云墨 <lg208143@alibaba-inc.com>",
   "homepage": "https://github.com/unity-template/onex-utils-packages#readme",
@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "@alib/build-scripts": "^0.1.30",
-    "babel-plugin-onex-utils": "^0.1.0"
+    "babel-plugin-onex-utils": "^0.2.0"
   }
 }

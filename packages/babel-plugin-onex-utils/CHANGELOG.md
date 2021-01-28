@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/unity-template/onex-utils-packages/compare/babel-plugin-onex-utils@0.1.0...babel-plugin-onex-utils@0.2.0) (2021-01-28)
+
+
+### Features
+
+* 🎸 构建添加build前缀 ([4790e47](https://github.com/unity-template/onex-utils-packages/commit/4790e4775b25f3ba670bdce3a49f7e4cdc6ddda1))
+
+
+
+
+
 # 0.1.0 (2021-01-24)
 
 

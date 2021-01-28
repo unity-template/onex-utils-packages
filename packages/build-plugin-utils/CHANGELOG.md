@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.2.0...build-plugin-utils@0.3.0) (2021-01-28)
+
+
+### Bug Fixes
+
+* 解决jest运行终止问题,fix [#3](https://github.com/unity-template/build-plugin-utils/issues/3) ([9db840a](https://github.com/unity-template/build-plugin-utils/commit/9db840a280f9a6ded6d39031e4056df6a024ac70))
+
+
+### Features
+
+* 🎸 统一构建器输出为tsconfig中配置的地址 ([136f7d5](https://github.com/unity-template/build-plugin-utils/commit/136f7d5a35a6bc0ee1084f4db2398a4387f84f4c))
+
+
+
+
+
 # [0.2.0](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.1.4...build-plugin-utils@0.2.0) (2021-01-24)
 
 
