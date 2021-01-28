@@ -2,6 +2,7 @@ import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
 import Config from 'webpack-chain';
 import * as glob from 'glob';
 import * as path from 'path';
+import { TsConfigJson } from 'type-fest';
 import TimeFixPlugin from 'time-fix-plugin';
 import { getBabelConfig } from './getBabelConfig';
 import { PluginContext } from '@alib/build-scripts/lib';
@@ -28,6 +29,12 @@ export const getBaseWebpackConfig = (context: PluginContext, options: any): Conf
   const { rootDir } = context;
   const config = new Config();
   const babelConfig = getBabelConfig();
+  let tSConfig: TsConfigJson;
+  try {
+    tSConfig = require(path.join(rootDir, './tsconfig.json')) as TsConfigJson;
+  } catch {
+    throw new Error('tsconfig.json not found');
+  }
 
   setEntryFile(context, config);
   // webpack base config
@@ -36,7 +43,7 @@ export const getBaseWebpackConfig = (context: PluginContext, options: any): Conf
   config.context(rootDir);
   config.resolve.extensions.merge(['.js', '.json', '.jsx', '.ts', '.html']);
   config.output
-    .path(path.join(rootDir, 'build'))
+    .path(path.join(rootDir, tSConfig.compilerOptions.outDir || './build'))
     .chunkFilename('[id].js')
     .filename('[name].js')
     .libraryTarget('commonjs-module')
