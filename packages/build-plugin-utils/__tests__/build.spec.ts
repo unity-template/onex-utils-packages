@@ -11,7 +11,7 @@ describe('simple build test suite', () => {
       plugins: [path.join(__dirname, '../src/index.ts')],
       getBuiltInPlugins: () => [],
     });
-    expect(fs.existsSync(path.join(__dirname, 'fixtures/basic-utils/build/index.js'))).toBe(true);
+    expect(fs.existsSync(path.join(__dirname, 'fixtures/basic-utils/lib/index.js'))).toBe(true);
   });
 });
 
