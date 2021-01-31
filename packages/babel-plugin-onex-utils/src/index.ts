@@ -20,8 +20,7 @@ export default function babelPluginOnexUtils(): PluginObj<PluginPass> {
 
         if (!isModule) return;
         const importList: ImportList = [];
-
-        traverse(path.node, {
+        traverse(path.parent, {
           ImportDeclaration: {
             exit(importDeclarationPath) {
               const imported: ImportItem['imported'] = [];
