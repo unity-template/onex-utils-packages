@@ -7,7 +7,10 @@ export default (({ onGetWebpackConfig }) => {
         .rule(rule)
         .use('babel-loader')
         .tap((options) => {
-          options.plugins.push(require.resolve('babel-plugin-onex-utils'));
+          const pluginPath = require.resolve('babel-plugin-onex-utils');
+          if (!options.plugins.includes(pluginPath)) {
+            options.plugins.push(require.resolve('babel-plugin-onex-utils'));
+          }
           return options;
         });
     });
