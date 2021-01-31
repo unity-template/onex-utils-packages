@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/unity-template/onex-utils-packages/compare/babel-plugin-onex-utils@0.2.0...babel-plugin-onex-utils@0.2.1) (2021-01-31)
+
+
+### Bug Fixes
+
+* 🐛 Couldn't find a Program (Fixes [#4](https://github.com/unity-template/onex-utils-packages/issues/4)) ([30f9299](https://github.com/unity-template/onex-utils-packages/commit/30f92996a6d3c8d52b0069b1633330ef84b0890c))
+* build assets path error (Fixes [#6](https://github.com/unity-template/onex-utils-packages/issues/6)) ([11b3e2a](https://github.com/unity-template/onex-utils-packages/commit/11b3e2a1e29649b802893456488c47a4b2edef3e))
+
+
+
+
+
 # [0.2.0](https://github.com/unity-template/onex-utils-packages/compare/babel-plugin-onex-utils@0.1.0...babel-plugin-onex-utils@0.2.0) (2021-01-28)
 
 
