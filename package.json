@@ -70,7 +70,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Genluo/generator-template.git"
+    "url": "git+https://github.com/unity-template/onex-utils-packages.git"
   },
   "workspaces": {
     "packages": [
