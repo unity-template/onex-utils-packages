@@ -9,7 +9,7 @@ export function AddDefaultImported(
 ): any {
   let source: string = packageName;
   if (imported && imported !== 'default') {
-    source = `${source}/build/${imported}`;
+    source = `${source}/build/utils/${imported}`;
   } else {
     source = `${source}/${imported}`;
   }
