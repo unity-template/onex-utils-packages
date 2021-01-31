@@ -2,7 +2,7 @@ import { IPlugin } from '@alib/build-scripts';
 
 export default (({ onGetWebpackConfig }) => {
   onGetWebpackConfig((config) => {
-    ['jsx', 'tsx', 'js', 'ts'].forEach((rule) => {
+    ['jsx', 'tsx'].forEach((rule) => {
       config.module
         .rule(rule)
         .use('babel-loader')
