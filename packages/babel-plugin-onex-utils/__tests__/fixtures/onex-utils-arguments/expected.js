@@ -1,6 +1,6 @@
 "use strict";
 
-var _data3 = _interopRequireDefault(require("onex-utils/build/data"));
+var _data3 = _interopRequireDefault(require("onex-utils/build/utils/data"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.formatters = void 0;
 
-var _kebabCase2 = _interopRequireDefault(require("onex-utils/build/kebabCase"));
+var _kebabCase2 = _interopRequireDefault(require("onex-utils/build/utils/kebabCase"));
 
-var _camelCase2 = _interopRequireDefault(require("onex-utils/build/camelCase"));
+var _camelCase2 = _interopRequireDefault(require("onex-utils/build/utils/camelCase"));
 
-var _snakeCase2 = _interopRequireDefault(require("onex-utils/build/snakeCase"));
+var _snakeCase2 = _interopRequireDefault(require("onex-utils/build/utils/snakeCase"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

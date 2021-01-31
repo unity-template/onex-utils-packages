@@ -1,6 +1,6 @@
 "use strict";
 
-var _noop10 = _interopRequireDefault(require("onex-utils/build/noop"));
+var _noop10 = _interopRequireDefault(require("onex-utils/build/utils/noop"));
 
 var _onexUtils = _interopRequireDefault(require("onex-utils"));
 
