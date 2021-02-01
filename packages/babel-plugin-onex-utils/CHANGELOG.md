@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/unity-template/onex-utils-packages/compare/babel-plugin-onex-utils@0.2.1...babel-plugin-onex-utils@0.2.2) (2021-02-01)
+
+
+### Bug Fixes
+
+* [bug] Webpack, variable is not defined (Fixes [#10](https://github.com/unity-template/onex-utils-packages/issues/10)) ([d247613](https://github.com/unity-template/onex-utils-packages/commit/d247613e0c4a1385ca633bb284884fb74acec87d))
+
+
+
+
+
 ## [0.2.1](https://github.com/unity-template/onex-utils-packages/compare/babel-plugin-onex-utils@0.2.0...babel-plugin-onex-utils@0.2.1) (2021-01-31)
 
 
