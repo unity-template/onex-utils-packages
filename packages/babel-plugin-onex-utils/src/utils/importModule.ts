@@ -1,4 +1,4 @@
-import { addDefault } from '@babel/helper-module-imports';
+import { addNamespace } from '@babel/helper-module-imports';
 import { NodePath } from '@babel/core';
 
 export function AddDefaultImported(
@@ -13,7 +13,7 @@ export function AddDefaultImported(
   } else {
     source = `${source}/${imported}`;
   }
-  return addDefault(path, source, {
+  return addNamespace(path, source, {
     nameHint: local || imported,
   });
 }
