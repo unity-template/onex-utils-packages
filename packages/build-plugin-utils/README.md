@@ -11,12 +11,7 @@ $ npm install @alib/build-scripts build-plugin-utils --save-dev
 build.json
 ```json
 {
-  "type": "rax",
-  "targets": [
-    "web"
-  ],
   "plugins": [
-    "build-plugin-component",
     "build-plugin-onex-utils"
   ]
 }
