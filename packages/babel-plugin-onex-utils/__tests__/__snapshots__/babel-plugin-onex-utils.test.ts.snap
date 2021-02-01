@@ -212,7 +212,7 @@ exports[`babel-plugin-onex-utils should work with onex-utils-placeholders 1`] = 
 
 function _typeof(obj) { \\"@babel/helpers - typeof\\"; if (typeof Symbol === \\"function\\" && typeof Symbol.iterator === \\"symbol\\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \\"function\\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \\"symbol\\" : typeof obj; }; } return _typeof(obj); }
 
-var _default = _interopRequireWildcard(require(\\"onex-utils\\"));
+var _onexUtils = _interopRequireDefault(require(\\"onex-utils\\"));
 
 var _bind = _interopRequireWildcard(require(\\"onex-utils/build/utils/bind\\"));
 
@@ -220,7 +220,9 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== \\"function\\") ret
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== \\"object\\" && typeof obj !== \\"function\\") { return { \\"default\\": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj[\\"default\\"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-_bind(func, _default, 1);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
+
+_bind(func, _onexUtils[\\"default\\"], 1);
 
 fp.partial(func, fp, 1);"
 `;
@@ -307,19 +309,17 @@ var _noop3 = _noop9;
 var _noop2 = _noop9;
 var _noop = _noop9;
 
-var _default4 = _interopRequireWildcard(require(\\"onex-utils\\"));
+var _onexUtils = _interopRequireDefault(require(\\"onex-utils\\"));
 
-var _default3 = _default4;
-var _default2 = _default4;
-var _default = _default4;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== \\"function\\") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== \\"object\\" && typeof obj !== \\"function\\") { return { \\"default\\": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj[\\"default\\"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var array = [_default, _default2, _noop, _noop2, _noop5, _noop6];
+var array = [_onexUtils[\\"default\\"], _onexUtils[\\"default\\"], _noop, _noop2, _noop5, _noop6];
 
-_noop7(_default3, _default4, _noop3, _noop4, _noop8, _noop9);"
+_noop7(_onexUtils[\\"default\\"], _onexUtils[\\"default\\"], _noop3, _noop4, _noop8, _noop9);"
 `;
 
 exports[`babel-plugin-onex-utils should work with onex-utils-repeat-use 1`] = `
