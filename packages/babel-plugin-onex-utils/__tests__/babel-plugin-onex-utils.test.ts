@@ -16,17 +16,15 @@ describe('babel-plugin-onex-utils', () => {
   lodash.each(glob.sync(pattern), (fixturesPath) => {
     const name = getTestName(fixturesPath);
     const actualPath = path.join(fixturesPath, './actual.js');
-    const expectedPath = path.join(fixturesPath, './expected.js');
 
     test(`should work with ${name}`, () => {
-      const expected = fs.readFileSync(expectedPath).toString().trim();
       const actual = transformFileSync(
         actualPath,
         {
           plugins: [babelPluginOnexUtils],
         },
       ).code.trim();
-      expect(actual).toEqual(expected);
+      expect(actual).toMatchSnapshot();
     });
   });
 });
