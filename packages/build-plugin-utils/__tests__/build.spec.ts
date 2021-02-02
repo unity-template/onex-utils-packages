@@ -4,6 +4,7 @@ import * as path from 'path';
 
 describe('simple build test suite', () => {
   test('check output source', async () => {
+    expect.assertions(2);
     await build({
       args: {},
       eject: false,
@@ -12,6 +13,7 @@ describe('simple build test suite', () => {
       getBuiltInPlugins: () => [],
     });
     expect(fs.existsSync(path.join(__dirname, 'fixtures/basic-utils/lib/index.js'))).toBe(true);
-  });
+    expect(fs.existsSync(path.join(__dirname, 'fixtures/basic-utils/dist/index.umd.js'))).toBe(true);
+  }, 100000);
 });
 
