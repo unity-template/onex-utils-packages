@@ -1,5 +1,6 @@
 import { IPlugin } from '@alib/build-scripts';
 import { getBaseWebpackConfig } from './config/getBaseWebpack';
+import { BuildType } from './type';
 
 const plugin: IPlugin = ({
   registerTask,
@@ -14,8 +15,10 @@ const plugin: IPlugin = ({
   registerMethod,
   setValue,
 }) => {
-  const webpackConfig = getBaseWebpackConfig(context, {});
-  registerTask('utils-build', webpackConfig);
+  registerTask('utils-build', getBaseWebpackConfig(context, {}));
+  registerTask('utils-build-umd', getBaseWebpackConfig(context, {
+    type: BuildType.umd,
+  }));
 };
 
 export default plugin;

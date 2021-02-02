@@ -12,9 +12,10 @@ build.json
 ```json
 {
   "plugins": [
-    "build-plugin-utils"
+    "build-plugin-onex-utils"
   ]
 }
+
 ```
 package.json
 ```json

@@ -6,9 +6,15 @@ import { TsConfigJson } from 'type-fest';
 import TimeFixPlugin from 'time-fix-plugin';
 import { getBabelConfig } from './getBabelConfig';
 import { PluginContext } from '@alib/build-scripts/lib';
+import { BuildType, WebpackOptions } from '../type';
 
-function setEntryFile(context: PluginContext, config: Config) {
+function setEntryFile(context: PluginContext, config: Config, type: BuildType) {
   const { rootDir } = context;
+  if (type === BuildType.umd) {
+    config.entry('index')
+      .add(path.join(rootDir, './src/index.ts'));
+    return;
+  }
   const map: {[key: string]: string} = {};
   const entryFiles = glob.sync('./src/**/*.ts', {
     cwd: rootDir,
@@ -25,7 +31,8 @@ function setEntryFile(context: PluginContext, config: Config) {
  * 获取基本 webpack config 配置
  * @returns {@link Config} webpack-chain相关配置
  */
-export const getBaseWebpackConfig = (context: PluginContext, options: any): Config => {
+export const getBaseWebpackConfig = (context: PluginContext, options?: WebpackOptions): Config => {
+  const { type } = options || {};
   const { rootDir } = context;
   const config = new Config();
   const babelConfig = getBabelConfig();
@@ -36,18 +43,26 @@ export const getBaseWebpackConfig = (context: PluginContext, options: any): Conf
     throw new Error('tsconfig.json not found');
   }
 
-  setEntryFile(context, config);
+  setEntryFile(context, config, type);
   // webpack base config
   config.mode('production');
   config.target('web');
   config.context(rootDir);
   config.resolve.extensions.merge(['.js', '.json', '.jsx', '.ts', '.html']);
-  config.output
-    .path(path.join(rootDir, tSConfig.compilerOptions.outDir || './build'))
-    .chunkFilename('[id].js')
-    .filename('[name].js')
-    .libraryTarget('commonjs-module')
-    .publicPath('/');
+  if (type === BuildType.umd) {
+    config.output.path(path.join(rootDir, './dist'))
+      .library('onexUtils')
+      .libraryTarget('umd')
+      .filename('index.umd.js');
+  } else {
+    config.output
+      .path(path.join(rootDir, tSConfig.compilerOptions.outDir || './build'))
+      .chunkFilename('[id].js')
+      .filename('[name].js')
+      .libraryTarget('commonjs-module')
+      .publicPath('/');
+  }
+
 
   // webpack module config
   config.module
