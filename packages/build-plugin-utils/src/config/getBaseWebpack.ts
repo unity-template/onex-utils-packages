@@ -16,7 +16,7 @@ function setEntryFile(context: PluginContext, config: Config, type: BuildType) {
     return;
   }
   const map: {[key: string]: string} = {};
-  const entryFiles = glob.sync('./src/**/*.ts', {
+  const entryFiles = glob.sync(path.join(rootDir, './src/**/*.ts'), {
     cwd: rootDir,
   });
   entryFiles.forEach((filepath: string) => {
