@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.3.0...build-plugin-utils@0.4.0) (2021-02-02)
+
+
+### Features
+
+* add umd build method  Fixes [#12](https://github.com/unity-template/build-plugin-utils/issues/12) ([3fed63d](https://github.com/unity-template/build-plugin-utils/commit/3fed63dcae61633287fe1e33e6c6dee1c52f0165))
+
+
+
+
+
 # [0.3.0](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.2.0...build-plugin-utils@0.3.0) (2021-01-28)
 
 
