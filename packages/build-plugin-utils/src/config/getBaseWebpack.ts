@@ -1,12 +1,12 @@
-import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
-import Config from 'webpack-chain';
 import * as glob from 'glob';
 import * as path from 'path';
-import { TsConfigJson } from 'type-fest';
+import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
+import Config from 'webpack-chain';
 import TimeFixPlugin from 'time-fix-plugin';
+import { BuildType, WebpackOptions } from '../type';
 import { getBabelConfig } from './getBabelConfig';
 import { PluginContext } from '@alib/build-scripts/lib';
-import { BuildType, WebpackOptions } from '../type';
+import { TsConfigJson } from 'type-fest';
 
 function setEntryFile(context: PluginContext, config: Config, type: BuildType) {
   const { rootDir } = context;
@@ -50,12 +50,15 @@ export const getBaseWebpackConfig = (context: PluginContext, options?: WebpackOp
   config.context(rootDir);
   config.resolve.extensions.merge(['.js', '.json', '.jsx', '.ts', '.html']);
   if (type === BuildType.umd) {
-    config.output.path(path.join(rootDir, './dist'))
+    config.output
+      .globalObject('this')
+      .path(path.join(rootDir, './dist'))
       .library('onexUtils')
       .libraryTarget('umd')
       .filename('index.umd.js');
   } else {
     config.output
+      .globalObject('this')
       .path(path.join(rootDir, tSConfig.compilerOptions.outDir || './build'))
       .chunkFilename('[id].js')
       .filename('[name].js')
