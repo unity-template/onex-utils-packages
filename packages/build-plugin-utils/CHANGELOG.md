@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.4.1...build-plugin-utils@0.5.0) (2021-11-25)
+
+
+### Features
+
+* 🎸 指定globalObject,work on browser and node ([fa8a32f](https://github.com/unity-template/build-plugin-utils/commit/fa8a32f4eee2fb68549ddb770c56a99f54bc2ac6))
+
+
+
+
+
 ## [0.4.1](https://github.com/unity-template/build-plugin-utils/compare/build-plugin-utils@0.4.0...build-plugin-utils@0.4.1) (2021-03-11)
 
 
