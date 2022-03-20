@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/unity-template/onex-utils-packages/compare/build-plugin-onex-utils@1.1.4...build-plugin-onex-utils@1.2.0) (2022-03-20)
+
+
+### Features
+
+* 添加文件类型 ([e7609c4](https://github.com/unity-template/onex-utils-packages/commit/e7609c41f89735f901b725abbeb7b7ea9893f954))
+
+
+
+
+
 ## [1.1.4](https://github.com/unity-template/onex-utils-packages/compare/build-plugin-onex-utils@1.1.3...build-plugin-onex-utils@1.1.4) (2021-02-01)
 
 **Note:** Version bump only for package build-plugin-onex-utils
